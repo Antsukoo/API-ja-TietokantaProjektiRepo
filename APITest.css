@@ -1,0 +1,76 @@
+body{
+
+   
+   text-align: center;
+   background-image: url("WOTWallpaper.jpg");
+   padding: 10%;
+   
+   
+   background-repeat: no-repeat;
+   background-size: auto;
+
+}
+
+
+label{
+
+   font-size: 30px;
+   color: white;
+   background-color: #3b3b3b;
+   border-radius: 10px;
+   padding: 1%;
+   
+
+}
+
+
+
+.kysymykset{
+
+   padding: 8%;
+      
+}
+
+.kysymykset input{
+
+   padding: 3%;
+   margin: 3%;
+   border: 3px solid grey;
+   border-radius: 10px;
+   width: 40%;
+   background-color: #3b3b3b;
+   color: white;
+   font-family: serif;
+   font-size: 40px;
+}
+
+
+.kysymykset select{
+
+   padding: 3%;
+   margin: 3%;
+   border: 3px solid grey;
+   border-radius: 10px;
+   width: 40%;
+   background-color: #3b3b3b;
+   color: white;
+   font-family: serif;
+   font-size: 40px;
+   padding-left: 7%;
+   padding-right: 7%;
+
+}
+
+
+.kysymykset button{
+
+   padding: 3%;
+   margin: 6%;
+   border: 3px solid grey;
+   border-radius: 10px;
+   background-color: #3b3b3b;
+   color: white;
+   font-family: serif;
+   font-size: 35px;
+}
+

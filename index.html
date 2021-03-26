@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    
+    <!-- Links the "APITest.css" stylesheet to this html file -->
+    <link rel="stylesheet" href="APITest.css">
+    
+    <!-- "Activates" JQuery on the linked script and also links the "APITest.js" script to this file -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+    <script src="APITest.js"></script>
+  </head>
+  
+  <body>
+    <header>
+      <!--
+      The form that handles the passing of the information from this script to the "APITest.php" script
+      -->
+
+      <form class="" action="APITest.php" method="get">
+        <div class="kysymykset">
+          <input type="text" id="etu" name="etuN" value="" placeholder="Etunimesi"><br>
+          <input type="text" id="suku" name="sukuN" value="" placeholder="Sukunimesi"><br>
+          <input type="text" id="kayttaja" name="kayttajaN" value="" placeholder="World of Tanks käyttäjänimesi"><br>
+          
+          
+          <label for="nationID">Valtio</label>
+          <select class="nationS" name="nationS" id="nationID">
+          
+                  <option value="">Kaikki</option>
+                  <option value="USA">Yhdysvallat</option>
+                  <option value="Germany">Saksa</option>
+                  <option value="China">Kiina</option>
+                  <option value="USSR">Neuvostoliitto</option>
+                  <option value="France">Ranska</option>
+                  <option value="UK">Britannia</option>
+                  <option value="Czech">Tšekkoslovakia</option>
+                  <option value="Sweden">Ruotsi</option>
+                  <option value="Poland">Puola</option>
+                  <option value="Japan">Japani</option>
+          
+          </select>
+          
+          <br>
+          
+          <label for="tierID">Taso</label>
+          <select class="tierS" name="tierS" id="tierID">
+          
+                  <option value="">Kaikki</option>
+                  <option value="1">Taso I</option>
+                  <option value="2">Taso II</option>
+                  <option value="3">Taso III</option>
+                  <option value="4">Taso IV</option>
+                  <option value="5">Taso V</option>
+                  <option value="6">Taso VI</option>
+                  <option value="7">Taso VII</option>
+                  <option value="8">Taso VIII</option>
+                  <option value="9">Taso IX</option>
+                  <option value="10">Taso X</option>
+                          
+          </select>
+          
+          <br>
+          
+          <label for="typeID">Tyyppi</label>
+          <select class="typeS" name="typeS" id="typeID">
+          
+                  <option value="">Kaikki</option>
+                  <option value="heavyTank">Raskaat tankit</option>
+                  <option value="mediumTank">Keskiraskaat tankit</option>
+                  <option value="AT-SPG">Panssarintorjuntavaunut</option>
+                  <option value="lightTank">Kevyet tankit</option>
+                  <option value="SPG">Tykistö tankit</option>
+                          
+          </select>
+          
+          <br>
+          
+          <button type="submit" name="button">Hae</button>
+        </div>
+        <script type="text/javascript">
+          $.getJSON('https://api.worldoftanks.eu/wot/encyclopedia/vehicles/?application_id=22fd6b6ba7f5501f22c52c011ec37ffa', function(vehicle){
+            
+            
+                               
+          });
+        </script>
+        
+      </form>
+
+    </header>
+
+  </body>
+</html>

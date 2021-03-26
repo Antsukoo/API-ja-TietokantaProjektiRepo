@@ -1,0 +1,51 @@
+/* everything */
+*{
+
+        background-color: black;
+
+}
+
+
+/* all of the things below */
+
+.resultD{
+
+        text-align: center;
+                   
+}
+
+
+/* the tanks icon/image/picture */
+
+.resultD img{
+
+        padding: 5%;
+        box-shadow: 0 0 50px 10px white;
+       
+        margin: 5%;
+        height: 20%;
+        width: auto;
+
+}
+
+
+/* the tank's information */
+
+.resultD p{
+
+        color: white;
+        
+        font-size: 23px;
+
+}
+
+
+/* the name of the tank */
+
+.resultD h2{
+
+        color: white;
+        
+        font-size: 35px;
+
+}
